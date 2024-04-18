@@ -1,7 +1,7 @@
 import MenuLink from "./menuLink/menuLink"
 import styles from "./sidebar.module.css"
 import Image from "next/image"
-import {MdDashboard ,MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdOutlineSettings, MdHelpCenter, MdAnalytics, MdWork, MdPeople} from "react-icons/md"
+import {MdDashboard ,MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdOutlineSettings, MdHelpCenter, MdAnalytics, MdWork, MdPeople, MdLogout} from "react-icons/md"
 const menuItems =[
     {
         title: "Pages",
@@ -85,6 +85,10 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
+            <button className={styles.logout}>
+                <MdLogout />
+                Logout
+            </button>
         </div>
     );
 }
