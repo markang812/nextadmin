@@ -2,6 +2,7 @@ import MenuLink from "./menuLink/menuLink"
 import styles from "./sidebar.module.css"
 import Image from "next/image"
 import {MdDashboard ,MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdOutlineSettings, MdHelpCenter, MdAnalytics, MdWork, MdPeople, MdLogout} from "react-icons/md"
+import {GoGraph} from "react-icons/go"
 const menuItems =[
     {
         title: "Pages",
@@ -25,6 +26,11 @@ const menuItems =[
                 title: "Transactions",
                 path: "/dashboard/transactions",
                 icon: <MdAttachMoney />
+            },
+            {
+                title: "Expenses",
+                path: "/dashboard/expenses",
+                icon: <GoGraph />
             }
         ]
     },
